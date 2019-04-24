@@ -1,0 +1,96 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>Crystal Collector</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
+            <li>You will be given a random number at the start of the game.</li>
+            <li>
+              There are four crystals below. By clicking on a crystal you will
+              add a specific amount of points to your total score.
+            </li>
+            <li>
+              You win the game by matching your total score to the random
+              number, you lose the game if your total score goes above the
+              random number.
+            </li>
+            <li>
+              The value of each crystal is hidden from you until you click on
+              it.
+            </li>
+            <li>
+              Each time when the game starts, the game will change the values of
+              each crystal.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4 id="random-number">random number:</h4>
+        </div>
+        <div class="col">
+          <h4>win</h4>
+          <h5 id="wins">0</h5>
+          <h4>lose</h4>
+          <h5 id="loses">0</h5>
+        </div>
+        <div class="col" id="score">
+          <h4>score</h4>
+          <h4 id="shit">0</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button class="btn" id="bluegem">
+            <img
+              src="http://caravaggiojewelry.com/wp-content/uploads/2019/02/Art-Masters-Gems-Calibrated-0-5-0-Ct-Round-Royal-Blue-Sapphire-Created-Gemstone-RCG0050-RBS-200x200.jpg"
+              alt="blue gem"
+            />
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn" id="redgem">
+            <img
+              src="https://www.gemselect.com/graphics/red-almandine-garnet-gemstone-small-gemselect-1.jpg"
+              alt="red gem"
+            />
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn" id="greengem">
+            <img
+              src="http://www.imarvintpa.com/Mapping/Objects/Items/Treasure/Gems/Gem-C.png"
+              alt="green gem"
+            />
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn" id="purplegem">
+            <img
+              src="https://www.gemselect.com/graphics/red-rubellite-tourmaline-gemstone-small-gemselect-1.jpg"
+              alt="purple gem"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+</html>
