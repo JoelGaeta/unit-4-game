@@ -7,30 +7,30 @@ var redGemValue = Math.floor(Math.random() * 10 + 1);
 var purpleGemValue = Math.floor(Math.random() * 10 + 1);
 var win = 0;
 var lose = 0;
-var finalScore;
+var currentScore = 0;
 
 function reset() {
   var randomNumber = Math.floor(Math.random() * 50);
-  var blueGemValue = Math.floor(Math.random() * 10 + 1);
-  var greenGemValue = Math.floor(Math.random() * 10 + 1);
-  var redGemValue = Math.floor(Math.random() * 10 + 1);
-  var purpleGemValue = Math.floor(Math.random() * 10 + 1);
-  var currentValue = 0;
+  blueGemValue = Math.floor(Math.random() * 10 + 1);
+  greenGemValue = Math.floor(Math.random() * 10 + 1);
+  redGemValue = Math.floor(Math.random() * 10 + 1);
+  purpleGemValue = Math.floor(Math.random() * 10 + 1);
 
   $("#random-number").html(randomNumber);
-  $("#shit").text(currentValue);
+  $("#shit").text(currentScore);
   start();
 }
+
 function start() {
-  var randomNumber = Math.floor(Math.random() * 50);
-  var blueGemValue = Math.floor(Math.random() * 10 + 1);
-  var greenGemValue = Math.floor(Math.random() * 10 + 1);
-  var redGemValue = Math.floor(Math.random() * 10 + 1);
-  var purpleGemValue = Math.floor(Math.random() * 10 + 1);
+  randomNumber = Math.floor(Math.random() * 50);
+  blueGemValue = Math.floor(Math.random() * 10 + 1);
+  greenGemValue = Math.floor(Math.random() * 10 + 1);
+  redGemValue = Math.floor(Math.random() * 10 + 1);
+  purpleGemValue = Math.floor(Math.random() * 10 + 1);
 
   $("#random-number").html(randomNumber);
+  $("#shit").text(currentScore);
 }
-
 $("#bluegem").on("click", function() {
   var currentValue = parseInt($("#shit").text());
   var newValue = currentValue + blueGemValue;
@@ -60,12 +60,12 @@ function checkIfGamesOver() {
   if (parseInt($("#shit").text()) === randomNumber) {
     alert("you win the game!");
     win++;
-    $("#wins").html(win);
+    $("#wins").text(win);
     reset();
   } else if (parseInt($("#shit").text()) > randomNumber) {
     alert("you lose!");
     lose++;
-    $("#loses").html(lose);
+    $("#loses").text(lose);
     reset();
   }
 }
