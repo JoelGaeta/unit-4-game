@@ -1,0 +1,24 @@
+body {
+  background-image: url("https://i.ytimg.com/vi/PBdLSOAE3h0/maxresdefault.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+li {
+  color: aliceblue;
+  font-size: 18px;
+}
+
+h4,
+h5 {
+  color: aliceblue;
+}
+
+.jumbotron {
+  background-color: blueviolet;
+}
+
+#crystalCollector {
+  text-align: center;
+}
