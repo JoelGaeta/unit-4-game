@@ -11,3 +11,6 @@ Each time when the game starts, the game will change the values of each crystal.
 
 Javascript/jQuery
 
+# Deployed Link
+
+https://joelgaeta.github.io/unit-4-game/.
